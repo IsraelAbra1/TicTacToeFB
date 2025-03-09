@@ -73,9 +73,10 @@ public class BoardGame extends View {
             {
                 ((GameActivity)context).setNewTouch(line,col);
             }
-            // -- for fb
-
-            //setNewValOnBoard(line,col);
+            else
+            {
+                Toast.makeText(getContext(), "not empty", Toast.LENGTH_SHORT).show();
+            }
         }
         else
             Toast.makeText(getContext(), "outside", Toast.LENGTH_SHORT).show();
